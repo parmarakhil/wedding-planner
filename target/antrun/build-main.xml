@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <condition else="false" property="skip.npm" value="true">
+      <and>
+        <available file="checksums.csv" filepath="/Users/akhilsingh/Desktop/Projects/Wedding planner/target" />
+        <available file="checksums.csv.old" filepath="/Users/akhilsingh/Desktop/Projects/Wedding planner/target" />
+        <filesmatch file2="/Users/akhilsingh/Desktop/Projects/Wedding planner/target/checksums.csv.old" file1="/Users/akhilsingh/Desktop/Projects/Wedding planner/target/checksums.csv" />
+      </and>
+    </condition>
+    <copy file="/Users/akhilsingh/Desktop/Projects/Wedding planner/target/checksums.csv" tofile="/Users/akhilsingh/Desktop/Projects/Wedding planner/target/checksums.csv.old" />
+  </target>
+</project>

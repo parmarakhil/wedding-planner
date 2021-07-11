@@ -6,7 +6,6 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { Router } from '@angular/router';
 import { of } from 'rxjs';
 import { NgxWebstorageModule } from 'ngx-webstorage';
-import { TranslateModule } from '@ngx-translate/core';
 
 import { ProfileInfo } from 'app/layouts/profiles/profile-info.model';
 import { Account } from 'app/core/auth/account.model';
@@ -36,7 +35,7 @@ describe('Component Tests', () => {
     beforeEach(
       waitForAsync(() => {
         TestBed.configureTestingModule({
-          imports: [HttpClientTestingModule, NgxWebstorageModule.forRoot(), TranslateModule.forRoot()],
+          imports: [HttpClientTestingModule, NgxWebstorageModule.forRoot()],
           declarations: [NavbarComponent],
           providers: [Router, LoginService],
         })

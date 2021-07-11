@@ -1,11 +1,11 @@
 <div>
   <h2 id="page-heading" data-cy="BookingHeading">
-    <span jhiTranslate="weddingplannerApp.booking.home.title">Bookings</span>
+    <span>Bookings</span>
 
     <div class="d-flex justify-content-end">
       <button class="btn btn-info mr-2" (click)="loadPage()" [disabled]="isLoading">
         <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
-        <span jhiTranslate="weddingplannerApp.booking.home.refreshListLabel">Refresh List</span>
+        <span>Refresh List</span>
       </button>
 
       <button
@@ -15,7 +15,7 @@
         [routerLink]="['/booking/new']"
       >
         <fa-icon icon="plus"></fa-icon>
-        <span jhiTranslate="weddingplannerApp.booking.home.createLabel"> Create a new Booking </span>
+        <span> Create a new Booking </span>
       </button>
     </div>
   </h2>
@@ -25,38 +25,22 @@
   <jhi-alert></jhi-alert>
 
   <div class="alert alert-warning" id="no-result" *ngIf="bookings?.length === 0">
-    <span jhiTranslate="weddingplannerApp.booking.home.notFound">No bookings found</span>
+    <span>No bookings found</span>
   </div>
 
   <div class="table-responsive" id="entities" *ngIf="bookings && bookings.length > 0">
     <table class="table table-striped" aria-describedby="page-heading">
       <thead>
         <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" [callback]="loadPage.bind(this)">
-          <th scope="col" jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
-          <th scope="col" jhiSortBy="eventDate">
-            <span jhiTranslate="weddingplannerApp.booking.eventDate">Event Date</span> <fa-icon icon="sort"></fa-icon>
-          </th>
-          <th scope="col" jhiSortBy="venue">
-            <span jhiTranslate="weddingplannerApp.booking.venue">Venue</span> <fa-icon icon="sort"></fa-icon>
-          </th>
-          <th scope="col" jhiSortBy="plan">
-            <span jhiTranslate="weddingplannerApp.booking.plan">Plan</span> <fa-icon icon="sort"></fa-icon>
-          </th>
-          <th scope="col" jhiSortBy="createdDate">
-            <span jhiTranslate="weddingplannerApp.booking.createdDate">Created Date</span> <fa-icon icon="sort"></fa-icon>
-          </th>
-          <th scope="col" jhiSortBy="contactNumber">
-            <span jhiTranslate="weddingplannerApp.booking.contactNumber">Contact Number</span> <fa-icon icon="sort"></fa-icon>
-          </th>
-          <th scope="col" jhiSortBy="emailId">
-            <span jhiTranslate="weddingplannerApp.booking.emailId">Email Id</span> <fa-icon icon="sort"></fa-icon>
-          </th>
-          <th scope="col" jhiSortBy="userName">
-            <span jhiTranslate="weddingplannerApp.booking.userName">User Name</span> <fa-icon icon="sort"></fa-icon>
-          </th>
-          <th scope="col" jhiSortBy="userId">
-            <span jhiTranslate="weddingplannerApp.booking.userId">User Id</span> <fa-icon icon="sort"></fa-icon>
-          </th>
+          <th scope="col" jhiSortBy="id"><span>ID</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="eventDate"><span>Event Date</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="venue"><span>Venue</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="plan"><span>Plan</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="createdDate"><span>Created Date</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="contactNumber"><span>Contact Number</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="emailId"><span>Email Id</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="userName"><span>User Name</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="userId"><span>User Id</span> <fa-icon icon="sort"></fa-icon></th>
           <th scope="col"></th>
         </tr>
       </thead>
@@ -67,7 +51,7 @@
           </td>
           <td>{{ booking.eventDate | formatMediumDatetime }}</td>
           <td>{{ booking.venue }}</td>
-          <td jhiTranslate="{{ 'weddingplannerApp.Plan.' + booking.plan }}">{{ booking.plan }}</td>
+          <td>{{ booking.plan }}</td>
           <td>{{ booking.createdDate | formatMediumDatetime }}</td>
           <td>{{ booking.contactNumber }}</td>
           <td>{{ booking.emailId }}</td>
@@ -82,7 +66,7 @@
                 data-cy="entityDetailsButton"
               >
                 <fa-icon icon="eye"></fa-icon>
-                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                <span class="d-none d-md-inline">View</span>
               </button>
 
               <button
@@ -92,12 +76,12 @@
                 data-cy="entityEditButton"
               >
                 <fa-icon icon="pencil-alt"></fa-icon>
-                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                <span class="d-none d-md-inline">Edit</span>
               </button>
 
               <button type="submit" (click)="delete(booking)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
                 <fa-icon icon="times"></fa-icon>
-                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                <span class="d-none d-md-inline">Delete</span>
               </button>
             </div>
           </td>

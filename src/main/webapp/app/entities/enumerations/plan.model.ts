@@ -1,7 +1,7 @@
 export enum Plan {
-  FRENCH = 'FRENCH',
+  BRONZE = 'BRONZE',
 
-  ENGLISH = 'ENGLISH',
+  SILVER = 'SILVER',
 
-  SPANISH = 'SPANISH',
+  GOLD = 'GOLD',
 }

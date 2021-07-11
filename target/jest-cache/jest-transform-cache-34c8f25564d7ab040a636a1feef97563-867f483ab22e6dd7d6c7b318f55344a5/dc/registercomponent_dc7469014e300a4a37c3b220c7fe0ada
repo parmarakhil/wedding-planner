@@ -1,0 +1,51 @@
+cef27ddb28c9454413ff8ce68b22f222
+/* istanbul ignore next */
+function cov_24b0dfvqtf() {
+  var path = "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/account/register/register.component.html";
+  var hash = "87962b76887046f189f5552d2143ceff52d67197";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/account/register/register.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 6501
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "87962b76887046f189f5552d2143ceff52d67197"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_24b0dfvqtf = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_24b0dfvqtf();
+cov_24b0dfvqtf().s[0]++;
+module.exports = "<div style='background-color: rgb(211, 237, 224);'>\n  <div class=\"row justify-content-center\">\n    <div class=\"col-md-8\">\n      <h1 data-cy=\"registerTitle\">Registration</h1>\n\n      <div class=\"alert alert-success\" *ngIf=\"success\"><strong>Registration saved!</strong> Please check your email for confirmation.</div>\n\n      <div class=\"alert alert-danger\" *ngIf=\"error\"><strong>Registration failed!</strong> Please try again later.</div>\n\n      <div class=\"alert alert-danger\" *ngIf=\"errorUserExists\">\n        <strong>Login name already registered!</strong> Please choose another one.\n      </div>\n\n      <div class=\"alert alert-danger\" *ngIf=\"errorEmailExists\"><strong>Email is already in use!</strong> Please choose another one.</div>\n\n      <div class=\"alert alert-danger\" *ngIf=\"doNotMatch\">The password and its confirmation do not match!</div>\n    </div>\n  </div>\n\n  <div class=\"row justify-content-center\">\n    <div class=\"col-md-8\">\n      <form name=\"form\" role=\"form\" (ngSubmit)=\"register()\" [formGroup]=\"registerForm\" *ngIf=\"!success\">\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" for=\"login\">Username</label>\n          <input\n            type=\"text\"\n            class=\"form-control\"\n            id=\"login\"\n            name=\"login\"\n            placeholder=\"Your username\"\n            formControlName=\"login\"\n            data-cy=\"username\"\n            #login\n          />\n\n          <div *ngIf=\"registerForm.get('login')!.invalid && (registerForm.get('login')!.dirty || registerForm.get('login')!.touched)\">\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('login')?.errors?.required\"> Your username is required. </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('login')?.errors?.minlength\">\n              Your username is required to be at least 1 character.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('login')?.errors?.maxlength\">\n              Your username cannot be longer than 50 characters.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('login')?.errors?.pattern\">\n              Your username can only contain letters and digits.\n            </small>\n          </div>\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" for=\"email\">Email</label>\n          <input\n            type=\"email\"\n            class=\"form-control\"\n            id=\"email\"\n            name=\"email\"\n            placeholder=\"Your email\"\n            formControlName=\"email\"\n            data-cy=\"email\"\n          />\n\n          <div *ngIf=\"registerForm.get('email')!.invalid && (registerForm.get('email')!.dirty || registerForm.get('email')!.touched)\">\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('email')?.errors?.required\"> Your email is required. </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('email')?.errors?.invalid\"> Your email is invalid. </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('email')?.errors?.minlength\">\n              Your email is required to be at least 5 characters.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('email')?.errors?.maxlength\">\n              Your email cannot be longer than 100 characters.\n            </small>\n          </div>\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" for=\"password\">New password</label>\n          <input\n            type=\"password\"\n            class=\"form-control\"\n            id=\"password\"\n            name=\"password\"\n            placeholder=\"New password\"\n            formControlName=\"password\"\n            data-cy=\"firstPassword\"\n          />\n\n          <div\n            *ngIf=\"registerForm.get('password')!.invalid && (registerForm.get('password')!.dirty || registerForm.get('password')!.touched)\"\n          >\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('password')?.errors?.required\"> Your password is required. </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('password')?.errors?.minlength\">\n              Your password is required to be at least 4 characters.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('password')?.errors?.maxlength\">\n              Your password cannot be longer than 50 characters.\n            </small>\n          </div>\n\n          <jhi-password-strength-bar [passwordToCheck]=\"registerForm.get('password')!.value\"></jhi-password-strength-bar>\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" for=\"confirmPassword\">New password confirmation</label>\n          <input\n            type=\"password\"\n            class=\"form-control\"\n            id=\"confirmPassword\"\n            name=\"confirmPassword\"\n            placeholder=\"Confirm the new password\"\n            formControlName=\"confirmPassword\"\n            data-cy=\"secondPassword\"\n          />\n\n          <div\n            *ngIf=\"\n              registerForm.get('confirmPassword')!.invalid &&\n              (registerForm.get('confirmPassword')!.dirty || registerForm.get('confirmPassword')!.touched)\n            \"\n          >\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('confirmPassword')?.errors?.required\">\n              Your confirmation password is required.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('confirmPassword')?.errors?.minlength\">\n              Your confirmation password is required to be at least 4 characters.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"registerForm.get('confirmPassword')?.errors?.maxlength\">\n              Your confirmation password cannot be longer than 50 characters.\n            </small>\n          </div>\n        </div>\n\n        <button type=\"submit\" [disabled]=\"registerForm.invalid\" class=\"btn btn-primary\" data-cy=\"submit\">Register</button>\n      </form>\n\n    </div>\n  </div>\n</div>\n";

@@ -1,0 +1,51 @@
+0a840be3ada545eefca05e3ade4f5a20
+/* istanbul ignore next */
+function cov_10ydfd0bsp() {
+  var path = "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/account/settings/settings.component.html";
+  var hash = "e0dd3ecb5782a0df9e2e4e9d9e23f15eb3b6e476";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/account/settings/settings.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 4316
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "e0dd3ecb5782a0df9e2e4e9d9e23f15eb3b6e476"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_10ydfd0bsp = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_10ydfd0bsp();
+cov_10ydfd0bsp().s[0]++;
+module.exports = "<div>\n  <div class=\"row justify-content-center\">\n    <div class=\"col-md-8\">\n      <h2 *ngIf=\"account\">\n        User settings for [<strong>{{ account.login }}</strong\n        >]\n      </h2>\n\n      <div class=\"alert alert-success\" *ngIf=\"success\">\n        <strong>Settings saved!</strong>\n      </div>\n\n      <jhi-alert-error></jhi-alert-error>\n\n      <form name=\"form\" role=\"form\" (ngSubmit)=\"save()\" [formGroup]=\"settingsForm\" *ngIf=\"account\" novalidate>\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" for=\"firstName\">First Name</label>\n          <input\n            type=\"text\"\n            class=\"form-control\"\n            id=\"firstName\"\n            name=\"firstName\"\n            placeholder=\"Your first name\"\n            formControlName=\"firstName\"\n            data-cy=\"firstname\"\n          />\n\n          <div\n            *ngIf=\"\n              settingsForm.get('firstName')!.invalid && (settingsForm.get('firstName')!.dirty || settingsForm.get('firstName')!.touched)\n            \"\n          >\n            <small class=\"form-text text-danger\" *ngIf=\"settingsForm.get('firstName')?.errors?.required\">\n              Your first name is required.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"settingsForm.get('firstName')?.errors?.minlength\">\n              Your first name is required to be at least 1 character.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"settingsForm.get('firstName')?.errors?.maxlength\">\n              Your first name cannot be longer than 50 characters.\n            </small>\n          </div>\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" for=\"lastName\">Last Name</label>\n          <input\n            type=\"text\"\n            class=\"form-control\"\n            id=\"lastName\"\n            name=\"lastName\"\n            placeholder=\"Your last name\"\n            formControlName=\"lastName\"\n            data-cy=\"lastname\"\n          />\n\n          <div\n            *ngIf=\"settingsForm.get('lastName')!.invalid && (settingsForm.get('lastName')!.dirty || settingsForm.get('lastName')!.touched)\"\n          >\n            <small class=\"form-text text-danger\" *ngIf=\"settingsForm.get('lastName')?.errors?.required\">\n              Your last name is required.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"settingsForm.get('lastName')?.errors?.minlength\">\n              Your last name is required to be at least 1 character.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"settingsForm.get('lastName')?.errors?.maxlength\">\n              Your last name cannot be longer than 50 characters.\n            </small>\n          </div>\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\" for=\"email\">Email</label>\n          <input\n            type=\"email\"\n            class=\"form-control\"\n            id=\"email\"\n            name=\"email\"\n            placeholder=\"Your email\"\n            formControlName=\"email\"\n            data-cy=\"email\"\n          />\n\n          <div *ngIf=\"settingsForm.get('email')!.invalid && (settingsForm.get('email')!.dirty || settingsForm.get('email')!.touched)\">\n            <small class=\"form-text text-danger\" *ngIf=\"settingsForm.get('email')?.errors?.required\"> Your email is required. </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"settingsForm.get('email')?.errors?.email\"> Your email is invalid. </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"settingsForm.get('email')?.errors?.minlength\">\n              Your email is required to be at least 5 characters.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"settingsForm.get('email')?.errors?.maxlength\">\n              Your email cannot be longer than 100 characters.\n            </small>\n          </div>\n        </div>\n\n        <button type=\"submit\" [disabled]=\"settingsForm.invalid\" class=\"btn btn-primary\" data-cy=\"submit\">Save</button>\n      </form>\n    </div>\n  </div>\n</div>\n";

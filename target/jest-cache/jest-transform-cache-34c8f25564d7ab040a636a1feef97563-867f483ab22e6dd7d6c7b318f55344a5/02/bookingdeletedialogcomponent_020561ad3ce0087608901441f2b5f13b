@@ -1,0 +1,51 @@
+b24ee344342d87d145ca44c228c1b9b8
+/* istanbul ignore next */
+function cov_2jviuw9yw2() {
+  var path = "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/entities/booking/delete/booking-delete-dialog.component.html";
+  var hash = "c3b17566679de997298c9a4acf41ab513e805d52";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/entities/booking/delete/booking-delete-dialog.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 999
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "c3b17566679de997298c9a4acf41ab513e805d52"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2jviuw9yw2 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2jviuw9yw2();
+cov_2jviuw9yw2().s[0]++;
+module.exports = "<form *ngIf=\"booking\" name=\"deleteForm\" (ngSubmit)=\"confirmDelete(booking.id!)\">\n  <div class=\"modal-header\">\n    <h4 class=\"modal-title\" data-cy=\"bookingDeleteDialogHeading\">Confirm delete operation</h4>\n\n    <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\" (click)=\"cancel()\">&times;</button>\n  </div>\n\n  <div class=\"modal-body\">\n    <jhi-alert-error></jhi-alert-error>\n\n    <p id=\"jhi-delete-booking-heading\">Are you sure you want to delete this Booking?</p>\n  </div>\n\n  <div class=\"modal-footer\">\n    <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\" (click)=\"cancel()\">\n      <fa-icon icon=\"ban\"></fa-icon>&nbsp;<span>Cancel</span>\n    </button>\n\n    <button id=\"jhi-confirm-delete-booking\" data-cy=\"entityConfirmDeleteButton\" type=\"submit\" class=\"btn btn-danger\">\n      <fa-icon icon=\"times\"></fa-icon>&nbsp;<span>Delete</span>\n    </button>\n  </div>\n</form>\n";

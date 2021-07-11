@@ -11,7 +11,7 @@ entity Booking {
 }
 
 enum Plan {
-    FRENCH, ENGLISH, SPANISH
+    BRONZE, SILVER, GOLD
 }
 
 paginate Booking with pagination

@@ -1,0 +1,51 @@
+d711a3f03f1e9058bb07779bb37013b1
+/* istanbul ignore next */
+function cov_15qlbbqywz() {
+  var path = "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/entities/booking/list/booking.component.html";
+  var hash = "3b3fd48fbfa449370b020fb6e5128556e0cad833";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/entities/booking/list/booking.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 4710
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "3b3fd48fbfa449370b020fb6e5128556e0cad833"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_15qlbbqywz = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_15qlbbqywz();
+cov_15qlbbqywz().s[0]++;
+module.exports = "<div>\n  <h2 id=\"page-heading\" data-cy=\"BookingHeading\">\n    <span>Bookings</span>\n\n    <div class=\"d-flex justify-content-end\">\n      <button class=\"btn btn-info mr-2\" (click)=\"loadPage()\" [disabled]=\"isLoading\">\n        <fa-icon icon=\"sync\" [spin]=\"isLoading\"></fa-icon>\n        <span>Refresh List</span>\n      </button>\n\n      <button\n        id=\"jh-create-entity\"\n        data-cy=\"entityCreateButton\"\n        class=\"btn btn-primary jh-create-entity create-booking\"\n        [routerLink]=\"['/booking/new']\"\n      >\n        <fa-icon icon=\"plus\"></fa-icon>\n        <span> Create a new Booking </span>\n      </button>\n    </div>\n  </h2>\n\n  <jhi-alert-error></jhi-alert-error>\n\n  <jhi-alert></jhi-alert>\n\n  <div class=\"alert alert-warning\" id=\"no-result\" *ngIf=\"bookings?.length === 0\">\n    <span>No bookings found</span>\n  </div>\n\n  <div class=\"table-responsive\" id=\"entities\" *ngIf=\"bookings && bookings.length > 0\">\n    <table class=\"table table-striped\" aria-describedby=\"page-heading\">\n      <thead>\n        <tr jhiSort [(predicate)]=\"predicate\" [(ascending)]=\"ascending\" [callback]=\"loadPage.bind(this)\">\n          <th scope=\"col\" jhiSortBy=\"id\"><span>ID</span> <fa-icon icon=\"sort\"></fa-icon></th>\n          <th scope=\"col\" jhiSortBy=\"eventDate\"><span>Event Date</span> <fa-icon icon=\"sort\"></fa-icon></th>\n          <th scope=\"col\" jhiSortBy=\"venue\"><span>Venue</span> <fa-icon icon=\"sort\"></fa-icon></th>\n          <th scope=\"col\" jhiSortBy=\"plan\"><span>Plan</span> <fa-icon icon=\"sort\"></fa-icon></th>\n          <th scope=\"col\" jhiSortBy=\"createdDate\"><span>Created Date</span> <fa-icon icon=\"sort\"></fa-icon></th>\n          <th scope=\"col\" jhiSortBy=\"contactNumber\"><span>Contact Number</span> <fa-icon icon=\"sort\"></fa-icon></th>\n          <th scope=\"col\" jhiSortBy=\"emailId\"><span>Email Id</span> <fa-icon icon=\"sort\"></fa-icon></th>\n          <th scope=\"col\" jhiSortBy=\"userName\"><span>User Name</span> <fa-icon icon=\"sort\"></fa-icon></th>\n          <th scope=\"col\" jhiSortBy=\"userId\"><span>User Id</span> <fa-icon icon=\"sort\"></fa-icon></th>\n          <th scope=\"col\"></th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr *ngFor=\"let booking of bookings; trackBy: trackId\" data-cy=\"entityTable\">\n          <td>\n            <a [routerLink]=\"['/booking', booking.id, 'view']\">{{ booking.id }}</a>\n          </td>\n          <td>{{ booking.eventDate | formatMediumDatetime }}</td>\n          <td>{{ booking.venue }}</td>\n          <td>{{ booking.plan }}</td>\n          <td>{{ booking.createdDate | formatMediumDatetime }}</td>\n          <td>{{ booking.contactNumber }}</td>\n          <td>{{ booking.emailId }}</td>\n          <td>{{ booking.userName }}</td>\n          <td>{{ booking.userId }}</td>\n          <td class=\"text-right\">\n            <div class=\"btn-group\">\n              <button\n                type=\"submit\"\n                [routerLink]=\"['/booking', booking.id, 'view']\"\n                class=\"btn btn-info btn-sm\"\n                data-cy=\"entityDetailsButton\"\n              >\n                <fa-icon icon=\"eye\"></fa-icon>\n                <span class=\"d-none d-md-inline\">View</span>\n              </button>\n\n              <button\n                type=\"submit\"\n                [routerLink]=\"['/booking', booking.id, 'edit']\"\n                class=\"btn btn-primary btn-sm\"\n                data-cy=\"entityEditButton\"\n              >\n                <fa-icon icon=\"pencil-alt\"></fa-icon>\n                <span class=\"d-none d-md-inline\">Edit</span>\n              </button>\n\n              <button type=\"submit\" (click)=\"delete(booking)\" class=\"btn btn-danger btn-sm\" data-cy=\"entityDeleteButton\">\n                <fa-icon icon=\"times\"></fa-icon>\n                <span class=\"d-none d-md-inline\">Delete</span>\n              </button>\n            </div>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n\n  <div *ngIf=\"bookings && bookings.length > 0\">\n    <div class=\"row justify-content-center\">\n      <jhi-item-count [params]=\"{ page: page, totalItems: totalItems, itemsPerPage: itemsPerPage }\"></jhi-item-count>\n    </div>\n\n    <div class=\"row justify-content-center\">\n      <ngb-pagination\n        [collectionSize]=\"totalItems\"\n        [(page)]=\"ngbPaginationPage\"\n        [pageSize]=\"itemsPerPage\"\n        [maxSize]=\"5\"\n        [rotate]=\"true\"\n        [boundaryLinks]=\"true\"\n        (pageChange)=\"loadPage($event)\"\n      ></ngb-pagination>\n    </div>\n  </div>\n</div>\n";

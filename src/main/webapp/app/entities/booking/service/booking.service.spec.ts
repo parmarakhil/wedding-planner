@@ -29,7 +29,7 @@ describe('Service Tests', () => {
         id: 0,
         eventDate: currentDate,
         venue: 'AAAAAAA',
-        plan: Plan.FRENCH,
+        plan: Plan.BRONZE,
         createdDate: currentDate,
         contactNumber: 'AAAAAAA',
         emailId: 'AAAAAAA',

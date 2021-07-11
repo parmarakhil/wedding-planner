@@ -1,0 +1,51 @@
+53ea3dc0e1fa686c63b8881bcca5afd7
+/* istanbul ignore next */
+function cov_uheduup5w() {
+  var path = "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/entities/booking/detail/booking-detail.component.html";
+  var hash = "01be915b2b05f543cd42264a01eba5356a6cc708";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/entities/booking/detail/booking-detail.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 1863
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "01be915b2b05f543cd42264a01eba5356a6cc708"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_uheduup5w = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_uheduup5w();
+cov_uheduup5w().s[0]++;
+module.exports = "<div class=\"row justify-content-center\">\n  <div class=\"col-8\">\n    <div *ngIf=\"booking\">\n      <h2 data-cy=\"bookingDetailsHeading\"><span>Booking</span></h2>\n\n      <hr />\n\n      <jhi-alert-error></jhi-alert-error>\n\n      <jhi-alert></jhi-alert>\n\n      <dl class=\"row-md jh-entity-details\">\n        <dt><span>ID</span></dt>\n        <dd>\n          <span>{{ booking.id }}</span>\n        </dd>\n        <dt><span>Event Date</span></dt>\n        <dd>\n          <span>{{ booking.eventDate | formatMediumDatetime }}</span>\n        </dd>\n        <dt><span>Venue</span></dt>\n        <dd>\n          <span>{{ booking.venue }}</span>\n        </dd>\n        <dt><span>Plan</span></dt>\n        <dd>\n          <span>{{ booking.plan }}</span>\n        </dd>\n        <dt><span>Created Date</span></dt>\n        <dd>\n          <span>{{ booking.createdDate | formatMediumDatetime }}</span>\n        </dd>\n        <dt><span>Contact Number</span></dt>\n        <dd>\n          <span>{{ booking.contactNumber }}</span>\n        </dd>\n        <dt><span>Email Id</span></dt>\n        <dd>\n          <span>{{ booking.emailId }}</span>\n        </dd>\n        <dt><span>User Name</span></dt>\n        <dd>\n          <span>{{ booking.userName }}</span>\n        </dd>\n        <dt><span>User Id</span></dt>\n        <dd>\n          <span>{{ booking.userId }}</span>\n        </dd>\n      </dl>\n\n      <button type=\"submit\" (click)=\"previousState()\" class=\"btn btn-info\" data-cy=\"entityDetailsBackButton\">\n        <fa-icon icon=\"arrow-left\"></fa-icon>&nbsp;<span>Back</span>\n      </button>\n\n      <button type=\"button\" [routerLink]=\"['/booking', booking.id, 'edit']\" class=\"btn btn-primary\">\n        <fa-icon icon=\"pencil-alt\"></fa-icon>&nbsp;<span>Edit</span>\n      </button>\n    </div>\n  </div>\n</div>\n";

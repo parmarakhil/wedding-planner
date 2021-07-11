@@ -1,7 +1,6 @@
 const webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const path = require('path');
-const MergeJsonWebpackPlugin = require('merge-jsons-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const WebpackNotifierPlugin = require('webpack-notifier');
@@ -105,14 +104,6 @@ module.exports = (config, options, targetOptions) => {
       // If you use an API server, in `prod` mode, you will need to enable CORS
       // (see the `jhipster.cors` common JHipster property in the `application-*.yml` configurations)
       __SERVER_API_URL__: JSON.stringify(environment.__SERVER_API_URL__),
-    }),
-    new MergeJsonWebpackPlugin({
-      output: {
-        groupBy: [
-          { pattern: './src/main/webapp/i18n/en/*.json', fileName: './i18n/en.json' },
-          // jhipster-needle-i18n-language-webpack - JHipster will add/remove languages in this array
-        ],
-      },
     })
   );
 

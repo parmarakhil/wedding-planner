@@ -1,0 +1,193 @@
+ae5c41c86bf34c367fd9fc2f5362e157
+"use strict";
+
+/* istanbul ignore next */
+function cov_i9mfrvc88() {
+  var path = "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/config/authority.constants.ts";
+  var hash = "a63ee385852b3870b15ea2e3f728eb2735848789";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/config/authority.constants.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 27
+        }
+      },
+      "2": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 8,
+          column: 62
+        }
+      },
+      "3": {
+        start: {
+          line: 6,
+          column: 4
+        },
+        end: {
+          line: 6,
+          column: 38
+        }
+      },
+      "4": {
+        start: {
+          line: 7,
+          column: 4
+        },
+        end: {
+          line: 7,
+          column: 36
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 5,
+            column: 1
+          },
+          end: {
+            line: 5,
+            column: 2
+          }
+        },
+        loc: {
+          start: {
+            line: 5,
+            column: 22
+          },
+          end: {
+            line: 8,
+            column: 1
+          }
+        },
+        line: 5
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 8,
+            column: 15
+          },
+          end: {
+            line: 8,
+            column: 60
+          }
+        },
+        type: "binary-expr",
+        locations: [{
+          start: {
+            line: 8,
+            column: 15
+          },
+          end: {
+            line: 8,
+            column: 32
+          }
+        }, {
+          start: {
+            line: 8,
+            column: 37
+          },
+          end: {
+            line: 8,
+            column: 59
+          }
+        }],
+        line: 8
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/config/authority.constants.ts",
+      mappings: ";;;AAAA,IAAY,SAGX;AAHD,WAAY,SAAS;IACnB,iCAAoB,CAAA;IACpB,+BAAkB,CAAA;AACpB,CAAC,EAHW,SAAS,GAAT,iBAAS,KAAT,iBAAS,QAGpB",
+      names: [],
+      sources: ["/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/config/authority.constants.ts"],
+      sourcesContent: ["export enum Authority {\n  ADMIN = 'ROLE_ADMIN',\n  USER = 'ROLE_USER',\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "a63ee385852b3870b15ea2e3f728eb2735848789"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_i9mfrvc88 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_i9mfrvc88();
+cov_i9mfrvc88().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_i9mfrvc88().s[1]++;
+exports.Authority = void 0;
+var Authority;
+
+/* istanbul ignore next */
+cov_i9mfrvc88().s[2]++;
+
+(function (Authority) {
+  /* istanbul ignore next */
+  cov_i9mfrvc88().f[0]++;
+  cov_i9mfrvc88().s[3]++;
+  Authority["ADMIN"] = "ROLE_ADMIN";
+
+  /* istanbul ignore next */
+  cov_i9mfrvc88().s[4]++;
+  Authority["USER"] = "ROLE_USER";
+})(Authority =
+/* istanbul ignore next */
+(cov_i9mfrvc88().b[0][0]++, exports.Authority) ||
+/* istanbul ignore next */
+(cov_i9mfrvc88().b[0][1]++, exports.Authority = {}));
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ha2hpbHNpbmdoL0Rlc2t0b3AvUHJvamVjdHMvd2VkZGluZy9zcmMvbWFpbi93ZWJhcHAvYXBwL2NvbmZpZy9hdXRob3JpdHkuY29uc3RhbnRzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxJQUFZLFNBQVo7Ozs7O0FBQUEsQ0FBQSxVQUFZLFNBQVosRUFBcUI7QUFBQTtBQUFBO0FBQUE7QUFDbkIsRUFBQSxTQUFBLENBQUEsT0FBQSxDQUFBLEdBQUEsWUFBQTs7QUFEbUI7QUFBQTtBQUVuQixFQUFBLFNBQUEsQ0FBQSxNQUFBLENBQUEsR0FBQSxXQUFBO0FBQ0QsQ0FIRCxFQUFZLFNBQVM7QUFBVDtBQUFBLDRCQUFBLE9BQUEsQ0FBQSxTQUFBO0FBQUE7QUFBQSw0QkFBQSxPQUFBLENBQUEsU0FBQSxHQUFTLEVBQVQsQ0FBWiIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBlbnVtIEF1dGhvcml0eSB7XG4gIEFETUlOID0gJ1JPTEVfQURNSU4nLFxuICBVU0VSID0gJ1JPTEVfVVNFUicsXG59XG4iXX0=

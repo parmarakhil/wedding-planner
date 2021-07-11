@@ -739,7 +739,6 @@
                     <version>${maven-surefire-plugin.version}</version>
                     <configuration>
                         <!-- Force alphabetical order to have a reproducible build -->
-                        <skipTests>true</skipTests>
                         <runOrder>alphabetical</runOrder>
                         <excludes>
                             <exclude>**/*IT*</exclude>

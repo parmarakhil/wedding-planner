@@ -24,8 +24,8 @@ export class BookingUpdateComponent implements OnInit {
     venue: [null, [Validators.required]],
     plan: [null, [Validators.required]],
     createdDate: [null, [Validators.required]],
-    contactNumber: [null, [Validators.required]],
-    emailId: [null, [Validators.required]],
+    contactNumber: [null, [Validators.required, Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")]],
+    emailId: [null, [Validators.required,Validators.email]],
     userName: [],
     userId: [],
   });

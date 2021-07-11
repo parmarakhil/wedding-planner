@@ -1,0 +1,306 @@
+79d0b7ffc95d3a7f1f0be5a3ddd2aea0
+"use strict";
+
+/* istanbul ignore next */
+function cov_2ext9yai1x() {
+  var path = "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/admin/user-management/user-management.model.ts";
+  var hash = "e99c29e4ba52f938172df1f3a95d8ae49d735ae2";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/admin/user-management/user-management.model.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 22
+        }
+      },
+      "2": {
+        start: {
+          line: 6,
+          column: 8
+        },
+        end: {
+          line: 6,
+          column: 21
+        }
+      },
+      "3": {
+        start: {
+          line: 7,
+          column: 8
+        },
+        end: {
+          line: 7,
+          column: 27
+        }
+      },
+      "4": {
+        start: {
+          line: 8,
+          column: 8
+        },
+        end: {
+          line: 8,
+          column: 35
+        }
+      },
+      "5": {
+        start: {
+          line: 9,
+          column: 8
+        },
+        end: {
+          line: 9,
+          column: 33
+        }
+      },
+      "6": {
+        start: {
+          line: 10,
+          column: 8
+        },
+        end: {
+          line: 10,
+          column: 27
+        }
+      },
+      "7": {
+        start: {
+          line: 11,
+          column: 8
+        },
+        end: {
+          line: 11,
+          column: 35
+        }
+      },
+      "8": {
+        start: {
+          line: 12,
+          column: 8
+        },
+        end: {
+          line: 12,
+          column: 31
+        }
+      },
+      "9": {
+        start: {
+          line: 13,
+          column: 8
+        },
+        end: {
+          line: 13,
+          column: 39
+        }
+      },
+      "10": {
+        start: {
+          line: 14,
+          column: 8
+        },
+        end: {
+          line: 14,
+          column: 35
+        }
+      },
+      "11": {
+        start: {
+          line: 15,
+          column: 8
+        },
+        end: {
+          line: 15,
+          column: 39
+        }
+      },
+      "12": {
+        start: {
+          line: 16,
+          column: 8
+        },
+        end: {
+          line: 16,
+          column: 45
+        }
+      },
+      "13": {
+        start: {
+          line: 17,
+          column: 8
+        },
+        end: {
+          line: 17,
+          column: 49
+        }
+      },
+      "14": {
+        start: {
+          line: 20,
+          column: 0
+        },
+        end: {
+          line: 20,
+          column: 20
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 5,
+            column: 4
+          },
+          end: {
+            line: 5,
+            column: 5
+          }
+        },
+        loc: {
+          start: {
+            line: 5,
+            column: 146
+          },
+          end: {
+            line: 18,
+            column: 5
+          }
+        },
+        line: 5
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/admin/user-management/user-management.model.ts",
+      mappings: ";;;AAeA,MAAa,IAAI;IACf,YACS,EAAW,EACX,KAAc,EACd,SAAyB,EACzB,QAAwB,EACxB,KAAc,EACd,SAAmB,EACnB,OAAgB,EAChB,WAAsB,EACtB,SAAkB,EAClB,WAAkB,EAClB,cAAuB,EACvB,gBAAuB;QAXvB,OAAE,GAAF,EAAE,CAAS;QACX,UAAK,GAAL,KAAK,CAAS;QACd,cAAS,GAAT,SAAS,CAAgB;QACzB,aAAQ,GAAR,QAAQ,CAAgB;QACxB,UAAK,GAAL,KAAK,CAAS;QACd,cAAS,GAAT,SAAS,CAAU;QACnB,YAAO,GAAP,OAAO,CAAS;QAChB,gBAAW,GAAX,WAAW,CAAW;QACtB,cAAS,GAAT,SAAS,CAAS;QAClB,gBAAW,GAAX,WAAW,CAAO;QAClB,mBAAc,GAAd,cAAc,CAAS;QACvB,qBAAgB,GAAhB,gBAAgB,CAAO;IAC7B,CAAC;CACL;AAfD,oBAeC",
+      names: [],
+      sources: ["/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/admin/user-management/user-management.model.ts"],
+      sourcesContent: ["export interface IUser {\n  id?: number;\n  login?: string;\n  firstName?: string | null;\n  lastName?: string | null;\n  email?: string;\n  activated?: boolean;\n  langKey?: string;\n  authorities?: string[];\n  createdBy?: string;\n  createdDate?: Date;\n  lastModifiedBy?: string;\n  lastModifiedDate?: Date;\n}\n\nexport class User implements IUser {\n  constructor(\n    public id?: number,\n    public login?: string,\n    public firstName?: string | null,\n    public lastName?: string | null,\n    public email?: string,\n    public activated?: boolean,\n    public langKey?: string,\n    public authorities?: string[],\n    public createdBy?: string,\n    public createdDate?: Date,\n    public lastModifiedBy?: string,\n    public lastModifiedDate?: Date\n  ) {}\n}\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "e99c29e4ba52f938172df1f3a95d8ae49d735ae2"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2ext9yai1x = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2ext9yai1x();
+cov_2ext9yai1x().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_2ext9yai1x().s[1]++;
+exports.User = void 0;
+
+class User {
+  constructor(id, login, firstName, lastName, email, activated, langKey, authorities, createdBy, createdDate, lastModifiedBy, lastModifiedDate) {
+    /* istanbul ignore next */
+    cov_2ext9yai1x().f[0]++;
+    cov_2ext9yai1x().s[2]++;
+    this.id = id;
+
+    /* istanbul ignore next */
+    cov_2ext9yai1x().s[3]++;
+    this.login = login;
+
+    /* istanbul ignore next */
+    cov_2ext9yai1x().s[4]++;
+    this.firstName = firstName;
+
+    /* istanbul ignore next */
+    cov_2ext9yai1x().s[5]++;
+    this.lastName = lastName;
+
+    /* istanbul ignore next */
+    cov_2ext9yai1x().s[6]++;
+    this.email = email;
+
+    /* istanbul ignore next */
+    cov_2ext9yai1x().s[7]++;
+    this.activated = activated;
+
+    /* istanbul ignore next */
+    cov_2ext9yai1x().s[8]++;
+    this.langKey = langKey;
+
+    /* istanbul ignore next */
+    cov_2ext9yai1x().s[9]++;
+    this.authorities = authorities;
+
+    /* istanbul ignore next */
+    cov_2ext9yai1x().s[10]++;
+    this.createdBy = createdBy;
+
+    /* istanbul ignore next */
+    cov_2ext9yai1x().s[11]++;
+    this.createdDate = createdDate;
+
+    /* istanbul ignore next */
+    cov_2ext9yai1x().s[12]++;
+    this.lastModifiedBy = lastModifiedBy;
+
+    /* istanbul ignore next */
+    cov_2ext9yai1x().s[13]++;
+    this.lastModifiedDate = lastModifiedDate;
+  }
+
+}
+
+/* istanbul ignore next */
+cov_2ext9yai1x().s[14]++;
+exports.User = User;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ha2hpbHNpbmdoL0Rlc2t0b3AvUHJvamVjdHMvd2VkZGluZy9zcmMvbWFpbi93ZWJhcHAvYXBwL2FkbWluL3VzZXItbWFuYWdlbWVudC91c2VyLW1hbmFnZW1lbnQubW9kZWwudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQTJCVzs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBWlgsTUFBYSxJQUFiLENBQWlCO0FBQ2YsRUFBQSxXQUFBLENBQ1MsRUFEVCxFQUVTLEtBRlQsRUFHUyxTQUhULEVBSVMsUUFKVCxFQUtTLEtBTFQsRUFNUyxTQU5ULEVBT1MsT0FQVCxFQVFTLFdBUlQsRUFTUyxTQVRULEVBVVMsV0FWVCxFQVdTLGNBWFQsRUFZUyxnQkFaVCxFQVlnQztBQUFBO0FBQUE7QUFBQTtBQVh2QixTQUFBLEVBQUEsR0FBQSxFQUFBOztBQVd1QjtBQUFBO0FBVnZCLFNBQUEsS0FBQSxHQUFBLEtBQUE7O0FBVXVCO0FBQUE7QUFUdkIsU0FBQSxTQUFBLEdBQUEsU0FBQTs7QUFTdUI7QUFBQTtBQVJ2QixTQUFBLFFBQUEsR0FBQSxRQUFBOztBQVF1QjtBQUFBO0FBUHZCLFNBQUEsS0FBQSxHQUFBLEtBQUE7O0FBT3VCO0FBQUE7QUFOdkIsU0FBQSxTQUFBLEdBQUEsU0FBQTs7QUFNdUI7QUFBQTtBQUx2QixTQUFBLE9BQUEsR0FBQSxPQUFBOztBQUt1QjtBQUFBO0FBSnZCLFNBQUEsV0FBQSxHQUFBLFdBQUE7O0FBSXVCO0FBQUE7QUFIdkIsU0FBQSxTQUFBLEdBQUEsU0FBQTs7QUFHdUI7QUFBQTtBQUZ2QixTQUFBLFdBQUEsR0FBQSxXQUFBOztBQUV1QjtBQUFBO0FBRHZCLFNBQUEsY0FBQSxHQUFBLGNBQUE7O0FBQ3VCO0FBQUE7QUFBdkIsU0FBQSxnQkFBQSxHQUFBLGdCQUFBO0FBQ0w7O0FBZFc7Ozs7QUFBakIsT0FBQSxDQUFBLElBQUEsR0FBQSxJQUFBIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGludGVyZmFjZSBJVXNlciB7XG4gIGlkPzogbnVtYmVyO1xuICBsb2dpbj86IHN0cmluZztcbiAgZmlyc3ROYW1lPzogc3RyaW5nIHwgbnVsbDtcbiAgbGFzdE5hbWU/OiBzdHJpbmcgfCBudWxsO1xuICBlbWFpbD86IHN0cmluZztcbiAgYWN0aXZhdGVkPzogYm9vbGVhbjtcbiAgbGFuZ0tleT86IHN0cmluZztcbiAgYXV0aG9yaXRpZXM/OiBzdHJpbmdbXTtcbiAgY3JlYXRlZEJ5Pzogc3RyaW5nO1xuICBjcmVhdGVkRGF0ZT86IERhdGU7XG4gIGxhc3RNb2RpZmllZEJ5Pzogc3RyaW5nO1xuICBsYXN0TW9kaWZpZWREYXRlPzogRGF0ZTtcbn1cblxuZXhwb3J0IGNsYXNzIFVzZXIgaW1wbGVtZW50cyBJVXNlciB7XG4gIGNvbnN0cnVjdG9yKFxuICAgIHB1YmxpYyBpZD86IG51bWJlcixcbiAgICBwdWJsaWMgbG9naW4/OiBzdHJpbmcsXG4gICAgcHVibGljIGZpcnN0TmFtZT86IHN0cmluZyB8IG51bGwsXG4gICAgcHVibGljIGxhc3ROYW1lPzogc3RyaW5nIHwgbnVsbCxcbiAgICBwdWJsaWMgZW1haWw/OiBzdHJpbmcsXG4gICAgcHVibGljIGFjdGl2YXRlZD86IGJvb2xlYW4sXG4gICAgcHVibGljIGxhbmdLZXk/OiBzdHJpbmcsXG4gICAgcHVibGljIGF1dGhvcml0aWVzPzogc3RyaW5nW10sXG4gICAgcHVibGljIGNyZWF0ZWRCeT86IHN0cmluZyxcbiAgICBwdWJsaWMgY3JlYXRlZERhdGU/OiBEYXRlLFxuICAgIHB1YmxpYyBsYXN0TW9kaWZpZWRCeT86IHN0cmluZyxcbiAgICBwdWJsaWMgbGFzdE1vZGlmaWVkRGF0ZT86IERhdGVcbiAgKSB7fVxufVxuIl19

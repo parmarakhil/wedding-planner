@@ -1,0 +1,51 @@
+148c24443ed2521641af9eeed28fde0f
+/* istanbul ignore next */
+function cov_1m6pogmeww() {
+  var path = "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/admin/user-management/update/user-management-update.component.html";
+  var hash = "bcea92e8eedb4342052040945f16431bffdd5395";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/admin/user-management/update/user-management-update.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 4813
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "bcea92e8eedb4342052040945f16431bffdd5395"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1m6pogmeww = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1m6pogmeww();
+cov_1m6pogmeww().s[0]++;
+module.exports = "<div class=\"row justify-content-center\">\n  <div class=\"col-8\">\n    <form name=\"editForm\" role=\"form\" novalidate (ngSubmit)=\"save()\" [formGroup]=\"editForm\">\n      <h2 id=\"myUserLabel\">Create or edit a User</h2>\n\n      <div *ngIf=\"user\">\n        <jhi-alert-error></jhi-alert-error>\n\n        <div class=\"form-group\" [hidden]=\"!user.id\">\n          <label>ID</label>\n          <input type=\"text\" class=\"form-control\" name=\"id\" formControlName=\"id\" readonly />\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\">Login</label>\n          <input type=\"text\" class=\"form-control\" name=\"login\" formControlName=\"login\" />\n\n          <div *ngIf=\"editForm.get('login')!.invalid && (editForm.get('login')!.dirty || editForm.get('login')!.touched)\">\n            <small class=\"form-text text-danger\" *ngIf=\"editForm.get('login')?.errors?.required\"> This field is required. </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"editForm.get('login')?.errors?.maxlength\">\n              This field cannot be longer than 50 characters.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"editForm.get('login')?.errors?.pattern\">\n              This field can only contain letters, digits and e-mail addresses.\n            </small>\n          </div>\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\">First Name</label>\n          <input type=\"text\" class=\"form-control\" name=\"firstName\" formControlName=\"firstName\" />\n\n          <div *ngIf=\"editForm.get('firstName')!.invalid && (editForm.get('firstName')!.dirty || editForm.get('firstName')!.touched)\">\n            <small class=\"form-text text-danger\" *ngIf=\"editForm.get('firstName')?.errors?.maxlength\">\n              This field cannot be longer than 50 characters.\n            </small>\n          </div>\n        </div>\n\n        <div class=\"form-group\">\n          <label>Last Name</label>\n          <input type=\"text\" class=\"form-control\" name=\"lastName\" formControlName=\"lastName\" />\n\n          <div *ngIf=\"editForm.get('lastName')!.invalid && (editForm.get('lastName')!.dirty || editForm.get('lastName')!.touched)\">\n            <small class=\"form-text text-danger\" *ngIf=\"editForm.get('lastName')?.errors?.maxlength\">\n              This field cannot be longer than 50 characters.\n            </small>\n          </div>\n        </div>\n\n        <div class=\"form-group\">\n          <label class=\"form-control-label\">Email</label>\n          <input type=\"email\" class=\"form-control\" name=\"email\" formControlName=\"email\" />\n\n          <div *ngIf=\"editForm.get('email')!.invalid && (editForm.get('email')!.dirty || editForm.get('email')!.touched)\">\n            <small class=\"form-text text-danger\" *ngIf=\"editForm.get('email')?.errors?.required\"> This field is required. </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"editForm.get('email')?.errors?.maxlength\">\n              This field cannot be longer than 100 characters.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"editForm.get('email')?.errors?.minlength\">\n              This field is required to be at least 5 characters.\n            </small>\n\n            <small class=\"form-text text-danger\" *ngIf=\"editForm.get('email')?.errors?.email\"> Your email is invalid. </small>\n          </div>\n        </div>\n\n        <div class=\"form-check\">\n          <label class=\"form-check-label\" for=\"activated\">\n            <input\n              class=\"form-check-input\"\n              [attr.disabled]=\"user.id === undefined ? 'disabled' : null\"\n              type=\"checkbox\"\n              id=\"activated\"\n              name=\"activated\"\n              formControlName=\"activated\"\n            />\n            <span>Activated</span>\n          </label>\n        </div>\n\n        <div class=\"form-group\">\n          <label>Profiles</label>\n          <select class=\"form-control\" multiple name=\"authority\" formControlName=\"authorities\">\n            <option *ngFor=\"let authority of authorities\" [value]=\"authority\">{{ authority }}</option>\n          </select>\n        </div>\n      </div>\n\n      <div *ngIf=\"user\">\n        <button type=\"button\" class=\"btn btn-secondary\" (click)=\"previousState()\">\n          <fa-icon icon=\"ban\"></fa-icon>&nbsp;<span>Cancel</span>\n        </button>\n\n        <button type=\"submit\" [disabled]=\"editForm.invalid || isSaving\" class=\"btn btn-primary\">\n          <fa-icon icon=\"save\"></fa-icon>&nbsp;<span>Save</span>\n        </button>\n      </div>\n    </form>\n  </div>\n</div>\n";

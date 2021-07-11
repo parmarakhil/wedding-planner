@@ -1,0 +1,51 @@
+893b12b8e62f7f11c41fb3307d6038c8
+/* istanbul ignore next */
+function cov_2jnpx2vxkk() {
+  var path = "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/layouts/navbar/navbar.component.html";
+  var hash = "e6597c09cacc4563e0bddb8beb900b01a6affef7";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/layouts/navbar/navbar.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 8091
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "e6597c09cacc4563e0bddb8beb900b01a6affef7"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2jnpx2vxkk = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2jnpx2vxkk();
+cov_2jnpx2vxkk().s[0]++;
+module.exports = "<nav data-cy=\"navbar\" class=\"navbar navbar-light navbar-expand-md bg-light\">\n  <a class=\"navbar-brand logo\" routerLink=\"/\" (click)=\"collapseNavbar()\">\n    <span class=\"logo-img\"></span>\n  </a>\n  <a\n    class=\"navbar-toggler d-lg-none\"\n    href=\"javascript:void(0);\"\n    data-toggle=\"collapse\"\n    data-target=\"#navbarResponsive\"\n    aria-controls=\"navbarResponsive\"\n    aria-expanded=\"false\"\n    aria-label=\"Toggle navigation\"\n    (click)=\"toggleNavbar()\"\n  >\n    <fa-icon icon=\"bars\"></fa-icon>\n  </a>\n  <div class=\"navbar-collapse collapse\" id=\"navbarResponsive\" [ngbCollapse]=\"isNavbarCollapsed\" [ngSwitch]=\"account !== null\">\n    <ul class=\"navbar-nav ml-auto\">\n      <li class=\"nav-item\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{ exact: true }\">\n        <a class=\"nav-link\" routerLink=\"/\" (click)=\"collapseNavbar()\">\n          <span>\n            <fa-icon icon=\"home\"></fa-icon>\n            <span>Home</span>\n          </span>\n        </a>\n      </li>\n      <!-- jhipster-needle-add-element-to-menu - JHipster will add new menu items here -->\n      <li *jhiHasAnyAuthority=\"'ROLE_USER'\" class=\"nav-item\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{ exact: true }\">\n        <a class=\"nav-link\" routerLink=\"gallery\" (click)=\"collapseNavbar()\">\n          <span>\n            <fa-icon icon=\"book\"></fa-icon>\n            <span>Gallery</span>\n          </span>\n        </a>\n      </li>\n      <li *jhiHasAnyAuthority=\"'ROLE_USER'\" class=\"nav-item\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{ exact: true }\">\n        <a class=\"nav-link\" routerLink=\"/booking/new\" (click)=\"collapseNavbar()\">\n          <span>\n            <fa-icon icon=\"book\"></fa-icon>\n            <span>Book</span>\n          </span>\n        </a>\n      </li>\n      <li\n        \n        *jhiHasAnyAuthority=\"'ROLE_ADMIN'\"\n        ngbDropdown\n        class=\"nav-item dropdown pointer\"\n        display=\"dynamic\"\n        routerLinkActive=\"active\"\n        [routerLinkActiveOptions]=\"{ exact: true }\"\n      >\n      \n        <a class=\"nav-link dropdown-toggle\" ngbDropdownToggle href=\"javascript:void(0);\" id=\"entity-menu\" data-cy=\"entity\">\n          <span>\n            <fa-icon icon=\"th-list\"></fa-icon>\n            <span>Entities</span>\n          </span>\n        </a>\n        <ul class=\"dropdown-menu\" ngbDropdownMenu aria-labelledby=\"entity-menu\">\n          <li>\n            <a\n              class=\"dropdown-item\"\n              routerLink=\"booking\"\n              routerLinkActive=\"active\"\n              [routerLinkActiveOptions]=\"{ exact: true }\"\n              (click)=\"collapseNavbar()\"\n            >\n              <fa-icon icon=\"asterisk\" [fixedWidth]=\"true\"></fa-icon>\n              <span>Bookings</span>\n            </a>\n          </li>\n          \n          <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->\n        </ul>\n      </li>\n      <li\n        *jhiHasAnyAuthority=\"'ROLE_ADMIN'\"\n        ngbDropdown\n        class=\"nav-item dropdown pointer\"\n        display=\"dynamic\"\n        routerLinkActive=\"active\"\n        [routerLinkActiveOptions]=\"{ exact: true }\"\n      >\n        <a class=\"nav-link dropdown-toggle\" ngbDropdownToggle href=\"javascript:void(0);\" id=\"admin-menu\" data-cy=\"adminMenu\">\n          <span>\n            <fa-icon icon=\"users-cog\"></fa-icon>\n            <span>Administration</span>\n          </span>\n        </a>\n        <ul class=\"dropdown-menu\" ngbDropdownMenu aria-labelledby=\"admin-menu\">\n          <li>\n            <a class=\"dropdown-item\" routerLink=\"admin/user-management\" routerLinkActive=\"active\" (click)=\"collapseNavbar()\">\n              <fa-icon icon=\"users\" [fixedWidth]=\"true\"></fa-icon>\n              <span>User management</span>\n            </a>\n          </li>\n          <li>\n            <a class=\"dropdown-item\" routerLink=\"admin/metrics\" routerLinkActive=\"active\" (click)=\"collapseNavbar()\">\n              <fa-icon icon=\"tachometer-alt\" [fixedWidth]=\"true\"></fa-icon>\n              <span>Metrics</span>\n            </a>\n          </li>\n          <li>\n            <a class=\"dropdown-item\" routerLink=\"admin/health\" routerLinkActive=\"active\" (click)=\"collapseNavbar()\">\n              <fa-icon icon=\"heart\" [fixedWidth]=\"true\"></fa-icon>\n              <span>Health</span>\n            </a>\n          </li>\n          <li>\n            <a class=\"dropdown-item\" routerLink=\"admin/configuration\" routerLinkActive=\"active\" (click)=\"collapseNavbar()\">\n              <fa-icon icon=\"cogs\" [fixedWidth]=\"true\"></fa-icon>\n              <span>Configuration</span>\n            </a>\n          </li>\n          <li>\n            <a class=\"dropdown-item\" routerLink=\"admin/logs\" routerLinkActive=\"active\" (click)=\"collapseNavbar()\">\n              <fa-icon icon=\"tasks\" [fixedWidth]=\"true\"></fa-icon>\n              <span>Logs</span>\n            </a>\n          </li>\n          <li *ngIf=\"openAPIEnabled\">\n            <a class=\"dropdown-item\" routerLink=\"admin/docs\" routerLinkActive=\"active\" (click)=\"collapseNavbar()\">\n              <fa-icon icon=\"book\" [fixedWidth]=\"true\"></fa-icon>\n              <span>API</span>\n            </a>\n          </li>\n          <!-- jhipster-needle-add-element-to-admin-menu - JHipster will add entities to the admin menu here -->\n        </ul>\n      </li>\n      <li\n        ngbDropdown\n        class=\"nav-item dropdown pointer\"\n        display=\"dynamic\"\n        routerLinkActive=\"active\"\n        [routerLinkActiveOptions]=\"{ exact: true }\"\n      >\n        <a class=\"nav-link dropdown-toggle\" ngbDropdownToggle href=\"javascript:void(0);\" id=\"account-menu\" data-cy=\"accountMenu\">\n          <span *ngIf=\"!account?.imageUrl\">\n            <fa-icon icon=\"user\"></fa-icon>\n            <span>Account</span>\n          </span>\n          <span *ngIf=\"account?.imageUrl\">\n            <img [src]=\"account!.imageUrl\" class=\"profile-image rounded-circle\" alt=\"Avatar\" />\n          </span>\n        </a>\n        <ul class=\"dropdown-menu\" ngbDropdownMenu aria-labelledby=\"account-menu\">\n          <li *ngSwitchCase=\"true\">\n            <a class=\"dropdown-item\" routerLink=\"account/settings\" routerLinkActive=\"active\" (click)=\"collapseNavbar()\" data-cy=\"settings\">\n              <fa-icon icon=\"wrench\" [fixedWidth]=\"true\"></fa-icon>\n              <span>Settings</span>\n            </a>\n          </li>\n          <li *ngSwitchCase=\"true\">\n            <a\n              class=\"dropdown-item\"\n              routerLink=\"account/password\"\n              routerLinkActive=\"active\"\n              (click)=\"collapseNavbar()\"\n              data-cy=\"passwordItem\"\n            >\n              <fa-icon icon=\"lock\" [fixedWidth]=\"true\"></fa-icon>\n              <span>Password</span>\n            </a>\n          </li>\n          <li *ngSwitchCase=\"true\">\n            <a class=\"dropdown-item\" (click)=\"logout()\" id=\"logout\" data-cy=\"logout\">\n              <fa-icon icon=\"sign-out-alt\" [fixedWidth]=\"true\"></fa-icon>\n              <span>Sign out</span>\n            </a>\n          </li>\n          <li *ngSwitchCase=\"false\">\n            <a class=\"dropdown-item\" (click)=\"login()\" id=\"login\" data-cy=\"login\">\n              <fa-icon icon=\"sign-in-alt\" [fixedWidth]=\"true\"></fa-icon>\n              <span>Sign in</span>\n            </a>\n          </li>\n          <li *ngSwitchCase=\"false\">\n            <a class=\"dropdown-item\" routerLink=\"account/register\" routerLinkActive=\"active\" (click)=\"collapseNavbar()\" data-cy=\"register\">\n              <fa-icon icon=\"user-plus\" [fixedWidth]=\"true\"></fa-icon>\n              <span>Register</span>\n            </a>\n          </li>\n        </ul>\n      </li>\n    </ul>\n  </div>\n</nav>\n";

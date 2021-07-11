@@ -1,0 +1,51 @@
+066a549d2bc585b2983ad809600153a3
+/* istanbul ignore next */
+function cov_m0fi1b0ny() {
+  var path = "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/admin/health/modal/health-modal.component.html";
+  var hash = "879cdbc99a5a8c0b38cace5497531b11628a6a5c";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/admin/health/modal/health-modal.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 1255
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "879cdbc99a5a8c0b38cace5497531b11628a6a5c"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_m0fi1b0ny = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_m0fi1b0ny();
+cov_m0fi1b0ny().s[0]++;
+module.exports = "<div class=\"modal-header\">\n  <h4 class=\"modal-title\" id=\"showHealthLabel\" *ngIf=\"health\">\n    <span class=\"text-capitalize\">{{ health.key }}</span>\n  </h4>\n\n  <button aria-label=\"Close\" data-dismiss=\"modal\" class=\"close\" type=\"button\" (click)=\"dismiss()\">\n    <span aria-hidden=\"true\">&times;</span>\n  </button>\n</div>\n\n<div class=\"modal-body pad\">\n  <div *ngIf=\"health\">\n    <h5>Properties</h5>\n\n    <div class=\"table-responsive\">\n      <table class=\"table table-striped\" aria-describedby=\"showHealthLabel\">\n        <thead>\n          <tr>\n            <th scope=\"col\" class=\"text-left\">Name</th>\n            <th scope=\"col\" class=\"text-left\">Value</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr *ngFor=\"let healthDetail of health.value.details! | keyvalue\">\n            <td class=\"text-left\">{{ healthDetail.key }}</td>\n            <td class=\"text-left\">{{ readableValue(healthDetail.value) }}</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n</div>\n\n<div class=\"modal-footer\">\n  <button data-dismiss=\"modal\" class=\"btn btn-secondary float-left\" type=\"button\" (click)=\"dismiss()\">Done</button>\n</div>\n";

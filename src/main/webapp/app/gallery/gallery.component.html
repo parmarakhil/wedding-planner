@@ -1,0 +1,82 @@
+
+<div class="container-fluid">
+    <ngb-carousel *ngIf="images">
+      <ng-template ngbSlide>
+        <div class="wrapper">
+          <img [src]="images[0]"  alt="Random first slide">
+        </div>
+    
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="wrapper">
+          <img [src]="images[1]" alt="Random second slide">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="wrapper">
+          <img [src]="images[2]"  alt="Random third slide">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="wrapper">
+          <img [src]="images[3]" alt="Random first slide">
+        </div>
+    
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="wrapper">
+          <img [src]="images[4]" alt="Random second slide">
+        </div>
+      </ng-template>
+      <!-- <ng-template ngbSlide>
+        <div class="wrapper">
+          <img [src]="images[5]"  alt="Random third slide">
+        </div>
+      </ng-template><ng-template ngbSlide>
+        <div class="wrapper">
+          <img [src]="images[6]" alt="Random first slide">
+        </div>
+    
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="wrapper">
+          <img [src]="images[7]" alt="Random second slide">
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="wrapper">
+          <img [src]="images[8]"  alt="Random third slide">
+        </div>
+      </ng-template> -->
+    </ngb-carousel>
+    <div class="row" style="margin-top: 50px;">
+
+    
+    <div class="card col-4" style="width: 18rem; padding: 10px;">
+        <img class="card-img-top" style="height: 455px;" src="../../content/images/package1/1File .jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="color: brown;">Bronze</h5>
+          <p class="card-text">
+              Includes Venue sourcing, catering suppliers, bridal dressing, mehndi artist, transportation facility, wedding schedule and decor advice
+          </p>
+          <a [routerLink]="['plandetail', 'package1']" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+      <div class="card col-4" style="width: 18rem; padding: 10px;">
+        <img class="card-img-top" style="height: 455px;"  src="../../content/images/package2/1File .jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="color: silver;">Silver</h5>
+          <p class="card-text">Includes Venue sourcing, invitation card, catering suppliers, bridal dressing, mehndi artist, transportation facility, grooms suit, cake and beverages wedding schedule and decor advice</p>
+          <a [routerLink]="['plandetail', 'package2']" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+      <div class="card col-4" style="width: 18rem; padding: 10px;">
+        <img class="card-img-top" style="height: 455px;" src="../../content/images/package3/3File .jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" style="color: gold;">Gold</h5>
+          <p class="card-text">Includes Venue sourcing, invitation card, catering suppliers, bridal dressing, mehndi artist, transportation facility, grooms suit, cake and beverages wedding schedule and decor advice, dedicated wedding co-ordinators, photographers & videography, customised wedding rings</p>
+          <a [routerLink]="['plandetail','package3']" class="btn btn-primary">View More</a>
+        </div>
+      </div>
+      </div>
+    </div>

@@ -1,0 +1,51 @@
+e08aef8d392250d2369a322aeeb28577
+/* istanbul ignore next */
+function cov_25m748i74c() {
+  var path = "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/layouts/main/main.component.html";
+  var hash = "678efc7cb86cc5bb0ec2971803ff558733403e84";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/akhilsingh/Desktop/Projects/wedding/src/main/webapp/app/layouts/main/main.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 367
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "678efc7cb86cc5bb0ec2971803ff558733403e84"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_25m748i74c = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_25m748i74c();
+cov_25m748i74c().s[0]++;
+module.exports = "<jhi-page-ribbon></jhi-page-ribbon>\n\n<div>\n  <router-outlet name=\"navbar\"></router-outlet>\n</div>\n\n<div class=\"container-fluid\" style='background-color: rgb(211, 237, 224);'>\n  <div class=\"card jh-card\" style='background-color: rgb(211, 237, 224);'>\n    <router-outlet></router-outlet>\n  </div>\n\n  <jhi-footer></jhi-footer>\n</div>\n";

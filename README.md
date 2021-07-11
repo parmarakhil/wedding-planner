@@ -2,6 +2,18 @@
 
 This application was generated using JHipster 7.1.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.1.0](https://www.jhipster.tech/documentation-archive/v7.1.0).
 
+## Tech stack
+1. Angular
+2. HTML
+3. CSS
+4. Java
+5. Spring boot
+6. Spring Core
+7. Spring JPA
+8. Spring actuator
+9. Spring Security
+10. PostgreSQL
+
 ## Development
 
 Before you can build this project, you must install and configure the following dependencies on your machine:

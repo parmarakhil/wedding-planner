@@ -1,5 +1,7 @@
 # weddingplanner
 
+This application helps users in planning for their wedding and to book relevant services. The user can view packages and sample wedding photos in gallery section. The admin can take action on the bookings.
+
 This application was generated using JHipster 7.1.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.1.0](https://www.jhipster.tech/documentation-archive/v7.1.0).
 
 ## Tech stack

@@ -2,8 +2,8 @@
   "groups": [
     {
       "name": "application",
-      "type": "com.dharni.weddingplanner.config.ApplicationProperties",
-      "sourceType": "com.dharni.weddingplanner.config.ApplicationProperties"
+      "type": "com.akhil.weddingplanner.config.ApplicationProperties",
+      "sourceType": "com.akhil.weddingplanner.config.ApplicationProperties"
     }
   ],
   "properties": [],

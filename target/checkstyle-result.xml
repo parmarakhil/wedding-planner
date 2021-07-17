@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.43">
-<file name="/Users/akhilsingh/Desktop/Projects/wedding/pom.xml">
+<file name="/Users/akhilsingh/Desktop/Projects/wedding-planner/pom.xml">
 </file>
-<file name="/Users/akhilsingh/Desktop/Projects/wedding/README.md">
+<file name="/Users/akhilsingh/Desktop/Projects/wedding-planner/README.md">
 </file>
-<file name="/Users/akhilsingh/Desktop/Projects/wedding/src/main/resources/i18n/messages.properties">
+<file name="/Users/akhilsingh/Desktop/Projects/wedding-planner/src/main/resources/i18n/messages.properties">
 </file>
 </checkstyle>
